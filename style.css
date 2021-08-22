@@ -1,0 +1,288 @@
+* {
+  font-family: 'Roboto', 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  height: 80px;
+}
+
+.motto {
+  display: block;
+}
+
+.social-distancing-y {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 90px auto 90px;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "navbar-top navbar-top navbar-top"
+    "navbar-bot navbar-bot navbar-bot"
+    "carousel carousel carousel"
+    ". main ."
+    "footer footer footer"
+    "footer-bottom footer-bottom footer-bottom";
+}
+
+.navbar-top {
+  display: flex;
+  align-items: center;
+  background-color: rgb(24, 29, 51);
+  height: 50px;
+  grid-area: navbar-top;
+}
+
+.navbar-bot {
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+  height: 85px;
+  grid-area: navbar-bot;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.my-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.my-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the my-dropdown */
+.my-dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.my-dropdown-content a:hover {background-color: whitesmoke}
+
+/* Show the my-dropdown menu on hover */
+.my-dropdown:hover .my-dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the my-dropdown button when the my-dropdown content is shown */
+.my-dropdown:hover .dropbtn {
+  background-color: whitesmoke;
+}
+
+.v {
+  padding-left: 8px;
+}
+
+.carousel {
+  grid-area: carousel;
+}
+
+.main {
+  grid-area: main;
+}
+
+.main-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  border-radius: .25rem;
+  position: relative;
+  bottom: 30px;
+  margin-bottom: 25px;
+}
+
+.main-social-distancing {
+  padding: 1rem;
+}
+
+.main-menu {
+  padding-left: 10px;
+  padding-right: 6rem;
+}
+
+.maindropbtn {
+  background-color: transparent;
+  color: black;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.main-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.main-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the main-dropdown */
+.main-dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.main-dropdown-content a:hover {background-color: whitesmoke}
+
+/* Show the main-dropdown menu on hover */
+.main-dropdown:hover .main-dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the main-dropdown button when the main-dropdown content is shown */
+.main-dropdown:hover .maindropbtn {
+  background-color: transparent;
+}
+
+.caption {
+  text-align: center;
+  margin: auto;
+  width: 50rem;
+}
+
+.cont-bergabung {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 25px;
+}
+
+.icon-main {
+  color: #17a2b8;
+  font-size: 50px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  grid-area: footer;
+  color: white;
+  background-color: #020213;
+}
+
+.footer div {
+  width: 15rem;
+  margin-right: 25px;
+  color: gray !important;
+}
+
+.width-25 {
+  width: 25rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  grid-area: footer-bottom;
+  background-color: #020213;
+  padding-bottom: 15px;
+}
+
+.light {
+  color: white;
+}
+
+.blue {
+  color: rgb(117, 117, 255);
+}
+
+.pad-x-100 {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.small {
+  font-size: 14px;
+}
+
+.normal {
+  font-size: 16px;
+}
+
+.medium {
+  font-size: 18px;
+}
+
+.large {
+  font-size: 24px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.right {
+  margin-left: auto;
+}
+
+.tmbl {
+  padding: 6px;
+  text-align: left;
+  background-color: transparent;
+  border: none;
+}
+
+.tmbl:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.tmbl-dark {
+  color: white;
+}
+
+.tmbl-magnifier {
+  background-color: #17a2b8;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.tmbl-magnifier:hover {
+  background-color: lightblue;
+}
